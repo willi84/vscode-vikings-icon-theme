@@ -41,7 +41,7 @@ const fetchContributors = (page: string): Promise<{ contributorsOfPage: Contribu
 
         const req = https.request(requestOptions, (res) => {
             const { nextPage, lastPage, prevPage } = parseLinkHeader(res.headers.link.toString());
-            console.log('> Material Icon Theme:', painter.yellow(`[${page}/${lastPage ? lastPage[1] : +prevPage[1] + 1}] Loading contributors from GitHub...`));
+            console.log('> Viking Icons Theme 🛡️⚔️:', painter.yellow(`[${page}/${lastPage ? lastPage[1] : +prevPage[1] + 1}] Loading contributors from GitHub...`));
             const result = [];
             res.on('data', (data: Buffer) => {
                 result.push(data);
@@ -94,18 +94,18 @@ const init = async () => {
     }
 
     if (contributorsList.length > 0) {
-        console.log('> Material Icon Theme:', painter.green('Successfully fetched all contributors from GitHub!'));
+        console.log('> Viking Icons Theme 🛡️⚔️:', painter.green('Successfully fetched all contributors from GitHub!'));
     } else {
-        console.log('> Material Icon Theme:', painter.red('Error: Could not fetch contributors from GitHub!'));
+        console.log('> Viking Icons Theme 🛡️⚔️:', painter.red('Error: Could not fetch contributors from GitHub!'));
         throw Error();
     }
     const outputPath = createContributorsList(contributorsList);
 
     // create the image
-    console.log('> Material Icon Theme:', painter.yellow('Creating image...'));
+    console.log('> Viking Icons Theme 🛡️⚔️:', painter.yellow('Creating image...'));
     const fileName = 'contributors';
     createScreenshot(outputPath, fileName).then(() => {
-        console.log('> Material Icon Theme:', painter.green(`Successfully created ${fileName} image!`));
+        console.log('> Viking Icons Theme 🛡️⚔️:', painter.green(`Successfully created ${fileName} image!`));
     }).catch(() => {
         throw Error(painter.red(`Error while creating ${fileName} image`));
     });

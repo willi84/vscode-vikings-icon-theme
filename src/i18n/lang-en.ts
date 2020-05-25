@@ -1,12 +1,12 @@
 import { Translation } from '../models';
 
 export const translation: Translation = {
-    'themeInstalled': 'Material Icon Theme has been installed.',
+    'themeInstalled': 'Viking Icons Theme 🛡️⚔️ has been installed.',
     'howToActivate': 'How to activate icons',
     'activate': 'Activate',
-    'activated': 'Material Icon Theme is active.',
+    'activated': 'Viking Icons Theme 🛡️⚔️ is active.',
     'neverShowAgain': 'Never show again',
-    'themeUpdated': 'Material Icon Theme has been updated.',
+    'themeUpdated': 'Viking Icons Theme 🛡️⚔️ has been updated.',
     'readChangelog': 'Read changelog',
     'iconPacks': {
         'selectPack': 'Select an icon pack',

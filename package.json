@@ -1,8 +1,8 @@
 {
   "name": "vikings-icon-theme",
-  "displayName": "Material Icon Theme",
-  "description": "Material Design Icons for Visual Studio Code",
-  "version": "4.1.0",
+  "displayName": "Viking Icon Theme",
+  "description": "Viking Icons for Visual Studio Code",
+  "version": "1.0.0",
   "publisher": "willi84",
   "engines": {
     "vscode": "^1.31.0"
@@ -43,7 +43,7 @@
       {
         "id": "vikings-icon-theme",
         "label": "Material Icon Theme",
-        "path": "./dist/material-icons.json",
+        "path": "./dist/vikings-icons.json",
         "_watch": true
       }
     ],
@@ -204,8 +204,7 @@
   },
   "dependencies": {
     "lodash.merge": "4.6.2",
-    "semver": "7.3.2",
-    "vscode": "^1.1.37"
+    "semver": "7.3.2"
   },
   "devDependencies": {
     "@types/glob": "^7.1.1",

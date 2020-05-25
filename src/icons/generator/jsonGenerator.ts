@@ -33,13 +33,13 @@ export const createIconFile = (updatedConfigs?: IconJsonOptions, updatedJSONConf
 
     // make sure that the folder color, opacity and saturation values are entered correctly
     if (updatedConfigs?.opacity && !validateOpacityValue(updatedConfigs?.opacity)) {
-        throw Error('Material Icons: Invalid opacity value!');
+        throw Error('Viking Icons 🛡️: Invalid opacity value!');
     }
     if (updatedConfigs?.saturation && !validateSaturationValue(updatedConfigs?.saturation)) {
-        throw Error('Material Icons: Invalid saturation value!');
+        throw Error('Viking Icons 🛡️: Invalid saturation value!');
     }
     if (updatedConfigs?.folders?.color && !validateHEXColorCode(updatedConfigs?.folders?.color)) {
-        throw Error('Material Icons: Invalid folder color value!');
+        throw Error('Viking Icons 🛡️: Invalid folder color value!');
     }
 
     try {
