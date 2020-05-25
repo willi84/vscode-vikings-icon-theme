@@ -23,5 +23,5 @@ const commands = {
 
 export const registered = Object.keys(commands).map(commandName => {
     const callCommand = () => commands[commandName]();
-    return vscode.commands.registerCommand(`material-icon-theme.${commandName}`, callCommand);
+    return vscode.commands.registerCommand(`vikings-icon-theme.${commandName}`, callCommand);
 });

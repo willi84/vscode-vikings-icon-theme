@@ -12,7 +12,7 @@ export const getConfig = (section?: string) => {
 
 /** Get list of configuration entries of package.json */
 export const getConfigProperties = (): { [config: string]: any } => {
-    return vscode.extensions.getExtension('PKief.material-icon-theme').packageJSON.contributes.configuration.properties;
+    return vscode.extensions.getExtension('willi84.vikings-icon-theme').packageJSON.contributes.configuration.properties;
 };
 
 /** Update configuration of vs code. */
@@ -21,12 +21,12 @@ export const setConfig = (section: string, value: any, global: boolean = false) 
 };
 
 export const getThemeConfig = (section: string) => {
-    return getConfig('material-icon-theme').inspect(section);
+    return getConfig('vikings-icon-theme').inspect(section);
 };
 
 /** Set the config of the theme. */
 export const setThemeConfig = (section: string, value: any, global: boolean = false) => {
-    return getConfig('material-icon-theme').update(section, value, global);
+    return getConfig('vikings-icon-theme').update(section, value, global);
 };
 
 /**
@@ -34,8 +34,8 @@ export const setThemeConfig = (section: string, value: any, global: boolean = fa
  * @param{boolean} global false by default
  */
 export const isThemeActivated = (global: boolean = false): boolean => {
-    return global ? getConfig().inspect('workbench.iconTheme').globalValue === 'material-icon-theme'
-        : getConfig().inspect('workbench.iconTheme').workspaceValue === 'material-icon-theme';
+    return global ? getConfig().inspect('workbench.iconTheme').globalValue === 'vikings-icon-theme'
+        : getConfig().inspect('workbench.iconTheme').workspaceValue === 'vikings-icon-theme';
 };
 
 /** Is the theme not visible for the user? */
@@ -46,7 +46,7 @@ export const isThemeNotVisible = (): boolean => {
 };
 
 /** Return the path of the extension in the file system. */
-export const getExtensionPath = () => vscode.extensions.getExtension('PKief.material-icon-theme').extensionPath;
+export const getExtensionPath = () => vscode.extensions.getExtension('willi84.vikings-icon-theme').extensionPath;
 
 /** Get the configuration of the icons as JSON Object */
 export const getMaterialIconsJSON = (): IconConfiguration => {

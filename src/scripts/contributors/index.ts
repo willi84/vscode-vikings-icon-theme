@@ -30,7 +30,7 @@ const fetchContributors = (page: string): Promise<{ contributorsOfPage: Contribu
         const requestOptions: https.RequestOptions = {
             method: 'GET',
             hostname: 'api.github.com',
-            path: `/repos/pkief/vscode-material-icon-theme/contributors?page=${page}`,
+            path: `/repos/willi84/vscode-vikings-icon-theme/contributors?page=${page}`,
             port: 443,
             headers: {
                 'link': 'next',

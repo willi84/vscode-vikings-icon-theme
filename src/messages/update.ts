@@ -24,7 +24,7 @@ const handleUpdateMessageActions = (value) => {
             break;
 
         case i18n.translate('readChangelog'):
-            vscode.env.openExternal(vscode.Uri.parse('https://marketplace.visualstudio.com/items/PKief.material-icon-theme/changelog'));
+            vscode.env.openExternal(vscode.Uri.parse('https://marketplace.visualstudio.com/items/willi84.vikings-icon-theme/changelog'));
             break;
 
         case i18n.translate('neverShowAgain'):

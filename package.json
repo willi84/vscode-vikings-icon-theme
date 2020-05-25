@@ -1,19 +1,19 @@
 {
-  "name": "material-icon-theme",
+  "name": "vikings-icon-theme",
   "displayName": "Material Icon Theme",
   "description": "Material Design Icons for Visual Studio Code",
   "version": "4.1.0",
-  "publisher": "PKief",
+  "publisher": "willi84",
   "engines": {
     "vscode": "^1.31.0"
   },
-  "homepage": "https://github.com/PKief/vscode-material-icon-theme/blob/master/README.md",
+  "homepage": "https://github.com/willi84/vscode-vikings-icon-theme/blob/master/README.md",
   "repository": {
     "type": "git",
-    "url": "https://github.com/PKief/vscode-material-icon-theme.git"
+    "url": "https://github.com/willi84/vscode-vikings-icon-theme.git"
   },
   "bugs": {
-    "url": "https://github.com/PKief/vscode-material-icon-theme/issues"
+    "url": "https://github.com/willi84/vscode-vikings-icon-theme/issues"
   },
   "icon": "logo.png",
   "galleryBanner": {
@@ -41,7 +41,7 @@
   "contributes": {
     "iconThemes": [
       {
-        "id": "material-icon-theme",
+        "id": "vikings-icon-theme",
         "label": "Material Icon Theme",
         "path": "./dist/material-icons.json",
         "_watch": true
@@ -49,39 +49,39 @@
     ],
     "commands": [
       {
-        "command": "material-icon-theme.activateIcons",
+        "command": "vikings-icon-theme.activateIcons",
         "title": "%command.activateIcons%"
       },
       {
-        "command": "material-icon-theme.toggleIconPacks",
+        "command": "vikings-icon-theme.toggleIconPacks",
         "title": "%command.toggleIconPacks%"
       },
       {
-        "command": "material-icon-theme.changeFolderTheme",
+        "command": "vikings-icon-theme.changeFolderTheme",
         "title": "%command.changeFolderTheme%"
       },
       {
-        "command": "material-icon-theme.changeFolderColor",
+        "command": "vikings-icon-theme.changeFolderColor",
         "title": "%command.changeFolderColor%"
       },
       {
-        "command": "material-icon-theme.restoreDefaultConfig",
+        "command": "vikings-icon-theme.restoreDefaultConfig",
         "title": "%command.restoreDefaultConfig%"
       },
       {
-        "command": "material-icon-theme.toggleExplorerArrows",
+        "command": "vikings-icon-theme.toggleExplorerArrows",
         "title": "%command.toggleExplorerArrows%"
       },
       {
-        "command": "material-icon-theme.changeOpacity",
+        "command": "vikings-icon-theme.changeOpacity",
         "title": "%command.changeOpacity%"
       },
       {
-        "command": "material-icon-theme.toggleGrayscale",
+        "command": "vikings-icon-theme.toggleGrayscale",
         "title": "%command.toggleGrayscale%"
       },
       {
-        "command": "material-icon-theme.changeSaturation",
+        "command": "vikings-icon-theme.changeSaturation",
         "title": "%command.changeSaturation%"
       }
     ],
@@ -89,22 +89,22 @@
       "type": "object",
       "title": "%configuration.title%",
       "properties": {
-        "material-icon-theme.showWelcomeMessage": {
+        "vikings-icon-theme.showWelcomeMessage": {
           "type": "boolean",
           "default": true,
           "description": "%configuration.showWelcomeMessage%"
         },
-        "material-icon-theme.showUpdateMessage": {
+        "vikings-icon-theme.showUpdateMessage": {
           "type": "boolean",
           "default": false,
           "description": "%configuration.showUpdateMessage%"
         },
-        "material-icon-theme.showReloadMessage": {
+        "vikings-icon-theme.showReloadMessage": {
           "type": "boolean",
           "default": true,
           "description": "%configuration.showReloadMessage%"
         },
-        "material-icon-theme.activeIconPack": {
+        "vikings-icon-theme.activeIconPack": {
           "type": "string",
           "default": "angular",
           "description": "%configuration.activeIconPack%",
@@ -129,22 +129,22 @@
             "none"
           ]
         },
-        "material-icon-theme.files.associations": {
+        "vikings-icon-theme.files.associations": {
           "type": "object",
           "default": {},
           "description": "%configuration.files.associations%"
         },
-        "material-icon-theme.folders.associations": {
+        "vikings-icon-theme.folders.associations": {
           "type": "object",
           "default": {},
           "description": "%configuration.folders.associations%"
         },
-        "material-icon-theme.languages.associations": {
+        "vikings-icon-theme.languages.associations": {
           "type": "object",
           "default": {},
           "description": "%configuration.languages.associations%"
         },
-        "material-icon-theme.folders.theme": {
+        "vikings-icon-theme.folders.theme": {
           "type": "string",
           "default": "specific",
           "description": "%configuration.folders.theme%",
@@ -159,25 +159,25 @@
             "none"
           ]
         },
-        "material-icon-theme.folders.color": {
+        "vikings-icon-theme.folders.color": {
           "type": "string",
           "default": "#90a4ae",
           "pattern": "^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$",
           "description": "%configuration.folders.color%"
         },
-        "material-icon-theme.opacity": {
+        "vikings-icon-theme.opacity": {
           "type": "number",
           "default": 1,
           "minimum": 0,
           "maximum": 1,
           "description": "%configuration.opacity%"
         },
-        "material-icon-theme.hidesExplorerArrows": {
+        "vikings-icon-theme.hidesExplorerArrows": {
           "type": "boolean",
           "default": false,
           "description": "%configuration.hidesExplorerArrows%"
         },
-        "material-icon-theme.saturation": {
+        "vikings-icon-theme.saturation": {
           "type": "number",
           "default": 1,
           "minimum": 0,
@@ -204,7 +204,8 @@
   },
   "dependencies": {
     "lodash.merge": "4.6.2",
-    "semver": "7.3.2"
+    "semver": "7.3.2",
+    "vscode": "^1.1.37"
   },
   "devDependencies": {
     "@types/glob": "^7.1.1",

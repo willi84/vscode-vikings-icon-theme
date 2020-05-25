@@ -12,7 +12,7 @@ export enum ThemeStatus {
 export const checkThemeStatus = async (state: vscode.Memento) => {
     try {
         // get the version from the state
-        const stateVersion = state.get('material-icon-theme.version');
+        const stateVersion = state.get('vikings-icon-theme.version');
         const packageVersion = getCurrentExtensionVersion();
 
         // check if the theme was used before
@@ -41,12 +41,12 @@ const themeIsAlreadyActivated = () => {
 
 /** Update the version number to the current version in the memento. */
 const updateExtensionVersionInMemento = (state: vscode.Memento) => {
-    return state.update('material-icon-theme.version', getCurrentExtensionVersion());
+    return state.update('vikings-icon-theme.version', getCurrentExtensionVersion());
 };
 
 /** Get the current version of the extension */
 const getCurrentExtensionVersion = (): string => {
-    return vscode.extensions.getExtension('PKief.material-icon-theme').packageJSON.version;
+    return vscode.extensions.getExtension('willi84.vikings-icon-theme').packageJSON.version;
 };
 
 /**
